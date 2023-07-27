@@ -4,6 +4,7 @@
   },
   "dependencies": {
     "react-hook-form": "^7.45.2",
+    "react-icons": "^4.10.1",
     "uuid": "^9.0.0"
   }
 }
