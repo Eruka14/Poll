@@ -51,7 +51,7 @@ const QuestionForm = () => {
   };
 
   return (
-    <div className="p-4 w-3/5" >
+    <div className="p-4" >
       <div className="my-4 p-4 border bg-slate-300 rounded-lg">
         <input
           type="text"
@@ -66,6 +66,7 @@ const QuestionForm = () => {
           rows={3}
           value={formDescription}
           onChange={handleChangeFormDescription}
+          
         />
       </div>
       {questions.map((question, questionIndex) => (
