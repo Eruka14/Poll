@@ -6,6 +6,7 @@ import note from "../image/note.svg"
 import graph from "../image/graph.svg"
 import user from "../image/user.svg"
 import { FcFaq } from "react-icons/fc";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
     return (
@@ -13,11 +14,11 @@ const HomePage = () => {
             <Navbar/>
             <div className="h-96 relative text-white bg-gradient-to-r from-emerald-800 to-emerald-600">
                 <div className="absolute top-24 left-44">
-                    <h1 className="text-7xl font-bold">Санал асуулга</h1>
+                    <Link to='/home'><h1 className="text-7xl font-bold">Санал асуулга</h1></Link>
                     <p className="mt-4 ml-5 text-2xl">
                     Өөрийн санал асуулга, судалгааны <b>формыг</b> үүсгэ.
                     </p>
-                    <button className="mt-10 ml-5 px-10 py-2 bg-orange-500 rounded-md hover:bg-orange-600 font-semibold">Санал асуулга үүсгэх</button>
+                    <button type="button" className="mt-10 ml-5 px-10 py-2 bg-orange-500 rounded-md hover:bg-orange-600 font-semibold"><Link to='/login'>Санал асуулга үүсгэх</Link></button>
                 </div>
                 <div className="z-0 absolute right-56 -bottom-48 ">
                     <img src={surveylogo} alt="survey" className="w-96"/>
